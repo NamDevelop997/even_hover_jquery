@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even hover jquery</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Even Hover in Jquery</h1>
+    <div
+      style="
+        margin: 10% auto;
+        max-width: 400px;
+        min-height: 400px;
+        background-color: red;
+        text-align: center;
+      "
+    >
+      Hover block here
+    </div>
+
+    <script src="./js/jquery.js"></script>
+
+    <script>
+      $(function () {
+        $("div").hover(
+          //hover in
+          //  function () {
+          //    //handler hover in
+          //    console.log('hover in!');
+          //  },
+          //  function () {
+          //    //handler hover out
+          //    console.log('hover out!');
+          //  }
+
+          function () {
+            // handler hover in out
+            console.log("hover in + out!");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
